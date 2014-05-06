@@ -15,13 +15,13 @@
         <asp:button runat="server" ID="btn1" meta:resourceKey="btn1" BackColor="<%$ Resources:Recources, Color %>" Height="26px" />
             <br />
             <br />
-        <asp:label runat="server" ID="lbLanguages" meta:resourceKey="lbEnglish"></asp:label>
+        <asp:label runat="server" ID="lbLanguages" meta:resourceKey="lbLanguages"></asp:label>
     
         <hr />
         <div id="leftdiv" style="width: 242px; height: 269px">
             <asp:Label ID="lbLanguageSelection" runat="server" Text=""></asp:Label>
             :<br />
-            <br /> <!--<asp:ListItem Value ="Auto">-->
+            <br /> 
             <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="189px">
                 <asp:ListItem Value="ar">Arabic</asp:ListItem>
                 <asp:ListItem Value="zh">Chinese</asp:ListItem>
@@ -52,8 +52,13 @@
             <asp:Button ID="Button1" runat="server" Text="Submit" />
         </div>
         <br />
-    
+            <asp:Label ID="lbSalary" runat="server" Text=""></asp:Label>
+
     </div>
+
+
+
+
 
     <div id="footer">
             <p>©&nbsp;<asp:Label ID="lb_date" runat="server"></asp:Label>

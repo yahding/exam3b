@@ -15,16 +15,14 @@ Partial Class _Default
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Dim salaryTb As Decimal
+        salaryTb = tbSalary.Text
 
-        Dim money As Decimal = 65545.42
-
+        Dim money As Decimal = salaryTb
+        lbSalary.Text = String.Format("{0:c}", money)
     End Sub
 
     Protected Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-
-    End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 End Class
